@@ -8,7 +8,7 @@ When the installer is open don't forget to mark the box with "Add Python 3.9 to 
 For the program to work you will also need CUDA Toolkit 11.4.0.
 The toolkit can be downloaded here: https://developer.nvidia.com/cuda-11-4-0-download-archive
 
-When installed you will need cuDNN. The folder with the needed files can be found in "AI_Bot"-folder.
+When installed you will need cuDNN. The folder with the needed files can be found in "AI_Bot"-folder, called "CUDA".
 Simply drag the folder into the "NVIDIA GPU Computing Toolkit"-folder.
 If you installed it without changing install directory it will be located here: C:\Program Files\NVIDIA GPU Computing Toolkit.
 
