@@ -1,3 +1,5 @@
+This is only PoC and should never be used to gain an advantage in the intented game!
+
 [Installations]
 
 Download Python by going to this link: https://www.python.org/downloads/release/python-396/
