@@ -12,22 +12,6 @@ import mss
 import sys
 import os
 
-sct = mss.mss()
-
-# Get config
-path = os.path.dirname(__file__) + "\\assets\\"
-config = configparser.ConfigParser()
-config.read(path + 'config.ini')
-
-# Read config
-CUDA = config['CONFIG']['CUDA']
-FPS = bool(config['CONFIG']['FPS'])
-renderSize = float(config['CONFIG']['RenderSize'])
-team = (config['CONFIG']['Team']).lower()
-aimkey = (config['CONFIG']['Aimkey']).lower()
-confidence = float(config['CONFIG']['Confidence'])
-visualization = bool(config['CONFIG']['Visualization'])
-
 # Function to check if CSGO process is running
 def checkIfProcessRunning(processName):
     for proc in psutil.process_iter():
@@ -47,6 +31,25 @@ while not checkIfProcessRunning("csgo"):
   else:
     print("CSGO process is not open, please open CSGO") 
     time.sleep(2)
+
+time.sleep(10)
+
+sct = mss.mss()
+
+path = os.path.dirname(__file__) + "\\assets\\"
+
+# Get config from asset folder
+config = configparser.ConfigParser()
+config.read(path + 'config.ini')
+
+# Read config
+CUDA = config['CONFIG']['CUDA']
+FPS = bool(config['CONFIG']['FPS'])
+renderSize = float(config['CONFIG']['RenderSize'])
+team = (config['CONFIG']['Team']).lower()
+aimkey = (config['CONFIG']['Aimkey']).lower()
+confidence = float(config['CONFIG']['Confidence'])
+visualization = bool(config['CONFIG']['Visualization'])
 
 time.sleep(10)
 
