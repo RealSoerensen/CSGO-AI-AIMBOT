@@ -2,8 +2,6 @@
 
 Python based AI aimbot for Counter-Strike: Global Offensive.
 
-<hr>
-<br>
 
 ## AIMBOT CURRENTLY BROKEN
 
@@ -11,15 +9,9 @@ Python based AI aimbot for Counter-Strike: Global Offensive.
 
 ## Warning
 
-<hr>
-
 This is only PoC and should never be used to gain an advantage in the intented game!
 
-<br>
-
 ## Installation
-
-<hr>
 
 ### Python
 
@@ -53,8 +45,6 @@ pip install -r requirements.txt
 
 ## Usage
 
-<hr>
-
 Raw input has to be off in order for the aimbot to work.
 Remember also to turn off "Enhance pointer precision" for no mouse acceleration in your mouse settings
 
@@ -63,8 +53,6 @@ Furthermore, CSGO also have to be in window mode. Either "Windowed Fullscreen" o
 Edit the `config.ini` file to customize the AI to your liking.
 
 ## Troubleshooting
-
-<hr>
 
 ### Error:
 
